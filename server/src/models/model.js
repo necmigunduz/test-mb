@@ -15,7 +15,8 @@ const ProductSchema = new Schema({
         type: String
     },
     desc: {
-        type: String
+        type: String,
+        default: 'No description is provided!'
     },
     price: {
         type: Number,
