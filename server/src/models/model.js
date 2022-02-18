@@ -18,10 +18,12 @@ const ProductSchema = new Schema({
         type: String
     },
     price: {
-        type: Number
+        type: Number,
+        default: 0
     },
     amount: {
-        type: Number
+        type: Number,
+        default: 0
     }
 })
 
