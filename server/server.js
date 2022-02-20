@@ -7,7 +7,7 @@ const app = express();
 
 const PORT = process.env.SERVER_PORT || 4000;
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/product-app");
+mongoose.connect("mongodb://mongo:27017/product-app");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
